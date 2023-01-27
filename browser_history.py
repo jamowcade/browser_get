@@ -18,6 +18,9 @@ def clear_google_history(term):
             conn.commit()
             conn.close()
             print("all brownser History is cleared")
+        elif term == "":
+            print("please enter something")
+            
         else:
             for rows in cr.execute("SELECT id, url FROM urls where url LIKE '%" + term + "%'"):
                 print(rows)
@@ -30,7 +33,7 @@ def clear_google_history(term):
             conn.close()
             print(f"all data associated with {term} has been deleted")
     
-term = input("enter a term or (all) to clear all browser history> ")
+term = input("enter a term or (all) to clear all browser history:> ")
 clear_google_history(term)
 
 
