@@ -4,9 +4,11 @@ import sqlite3
 
 
 def clear_google_history(term):
+    #check if chrome is running and close it by force
     if "chrome.exe" in (p.name() for p in psutil.process_iter()):
         os.system("taskkill /im chrome.exe /f")
-    conn = sqlite3.connect("C:\\Users\\HP\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\History")
+    db_path = "C:\\Users\\HP\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\History"
+    conn = sqlite3.connect(db_path)
     cr = conn.cursor()
     id = 0
     run = True
