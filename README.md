@@ -1,6 +1,6 @@
 # Clear Browser History
 
-this program clears chrome browser history.
+this scripts clears chrome browser history.
 the user enters a term and history is deleted base on this terms.
 you can also  type all, to delete all history in the browser.
 
