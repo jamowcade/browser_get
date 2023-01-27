@@ -11,6 +11,6 @@ you can also  type all, to delete all history in the browser.
 
 # How it works.
 1. first the program checks if chrome is runnig and closes.
-2. then connects to history database. since this version is based on windows database file path is stored in 
- db_path = "C:\\Users\\HP\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\History"
+2. then connects to history database. since this version is based on windows database file path is stored in.
+ "C:\\Users\\HP\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\History"
 3. 
